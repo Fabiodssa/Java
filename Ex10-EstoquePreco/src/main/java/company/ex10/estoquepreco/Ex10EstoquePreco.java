@@ -9,11 +9,15 @@ import company.ex10.estoquepreco.Produto;
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         Produto produto = new Produto();
+        
         System.out.println("Cadastre seu produto: ");
         System.out.println("Nome: ");
+        
         produto.nome=sc.nextLine();
+        
         System.out.println("Preco: ");
         produto.preco=sc.nextDouble();
+        
         System.out.println("Quantidade: ");
         produto.estoque=sc.nextInt();
         
