@@ -5,6 +5,7 @@ public class Estudante {
     public double nota1;
     public double nota2;
     public double nota3;
+    
     double media;
     double falta;
     public double media(){
