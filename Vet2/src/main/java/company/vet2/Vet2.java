@@ -19,16 +19,16 @@ public class Vet2 {
             System.out.println("");
             System.out.println("Digite o nome do produto: ");
             vet[i].nome = sc.nextLine();
-            System.out.println("Du«igite o preço do produto: ");
+            System.out.println("Du«igite o preco do produto: ");
             vet[i].preco = sc.nextDouble();
-            System.out.println("Produto: " + vet[i].nome + ", Preço: " + vet[i].preco);
+            System.out.println("Produto: " + vet[i].nome + ", Preco: " + vet[i].preco);
         }
         
         double soma=0;
         for (int i=0; i<n;i++){
             soma+=vet[i].preco;  
         }
-        System.out.println(soma);
+        System.out.println("Soma: "+soma);
         sc.close();
     }
 }
