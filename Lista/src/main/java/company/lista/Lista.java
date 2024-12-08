@@ -55,8 +55,10 @@ public class Lista {
         System.out.println("-------------------");
     /////////////////////////////////////////////////////////////////////////////////////
     
-        String nome = list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null);
-        nome = list.stream().filter(x -> x.charAt(0) == 'B').findFirst().orElse(null);
+    // Retorna o primeiro nome com a letra A. se nao encotrar retorna null (valor nulo)
+    
+        String nome = list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null); 
+        //nome = list.stream().filter(x -> x.charAt(0) == 'B').findFirst().orElse(null);
             System.out.println(nome);
     }
 }
