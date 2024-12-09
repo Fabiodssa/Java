@@ -2,18 +2,19 @@
 package company.funcionario;
 
 public class Dados {
-private Integer id;
-	private String name;
-	private Double salary;
 	
-	public Employee() {
+	private Integer id;
+	private String nome;
+	private Double salario;
+	
+	public Dados() {
 	}
 
-	public Employee(Integer id, String name, Double salary) {
+	public Dados(Integer id, String nome, Double salario) {
 		super();
 		this.id = id;
-		this.name = name;
-		this.salary = salary;
+		this.nome = nome;
+		this.salario = salario;
 	}
 
 	public Integer getId() {
@@ -25,27 +26,27 @@ private Integer id;
 	}
 
 	public String getName() {
-		return name;
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String nome) {
+		this.nome = nome;
 	}
 
 	public Double getSalary() {
-		return salary;
+		return salario;
 	}
 
 	public void setSalary(Double salary) {
-		this.salary = salary;
+		this.salario = salario;
 	}
 	
-	public void increaseSalary(double percentage) {
-		salary += salary * percentage / 100.0;
+	public void almentaSalario(double percentage) {
+		salario += salario * percentage / 100.0;
 	}
 	
 	@Override
 	public String toString() {
-		return id + ", " + name + ", " + String.format("%.2f", salary);
+		return id + ", " + nome + ", " + String.format("%.2f", salario);
 	}
 }
