@@ -25,7 +25,7 @@ public class Data {
         
         LocalDate dh7 = LocalDate.of(2024, 12, 10);
         LocalDateTime dh8 = LocalDateTime.of(2024, 12, 10, 23, 40);
-        
+       
         System.out.println("A data: "+d1);
         System.out.println("A data e o horario (local): "+dh1); // horario local da maquina
         System.out.println("A data e o horario (global): "+dh2); // a data e hora global (londres)
@@ -39,5 +39,15 @@ public class Data {
         System.out.println("");
         System.out.println("Data recebita diretamente: "+dh7);
         System.out.println("Data recebita diretamente: "+dh8);
+        System.out.println("");
+        
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////
+    DateTimeFormatter fm1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    
+    LocalDate dd1 = LocalDate.parse("2024-12-18");
+    LocalDateTime dd2 =LocalDateTime.parse("2024-12-15T01:30:58");
+    
+        System.out.println("data: "+dd1.format(fm1));
+        System.out.println("Data e hora: "+fm1.format(dd2));
     }
 }
